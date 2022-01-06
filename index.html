@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="sezioneMenu" id="sezioneCorrente" onclick="openUrl('./index.html', '_self')">HOME</div>
+        <div class="sezioneMenu" onclick="openUrl('./pagine/discord.html', '_self')">DISCORD</div>
+        <div class="sezioneMenu" onclick="openUrl('./pagine/contattami.html', '_self')">CONTATTI</div>
+    </div>
+
+    <div id="containerSuperiore">
+        <img src="img/Profilo.png" alt="Elio" id="profiloHome">
+        <div id="title">HOME</div>
+    </div>
+    <div id="seguimiSuHome">
+        <div>Seguimi su</div>
+        <div onclick="openUrl('https:/\/', '_blank')"><img
+                src="img/youtube icon.png" alt="Youtube icon">YOUTUBE (soon)</div>
+        <div onclick="openUrl('https:/\/discord.gg/', '_blank')"><img src="img/discord icon.png"
+                alt="Discord icon">DISCORD (In arrivo)</div>
+    </div>
+
+    <div id="container">
+        <img src="img/right-arrow.png" alt="Freccetta" id="freccia">
+        <div class="titleContainer">Informazioni generali</div>
+        <div id="contenuti">
+            <div class="sezioneContenuto">
+                <div class="imgContenuto"><img src="img/discordBot.jpg" alt="Discord"></div>
+                <div class="titleContenuto">Il mio bot di discord</div>
+                <div class="descriptionContenuto">Ti presento Aviraa, il bot creato da me ha più di 150 comandi se vuoi aggiungero clicca qui sotto!</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/', '_blank')">
+                    <img src="img/discord icon.png" alt="Discord icon">IN ARRIVO!
+                </div>
+            </div>
+            <div class="sezioneContenuto">
+                <div class="imgContenuto"><img src="img/telegram banner.png" alt="Telegram"></div>
+                <div class="titleContenuto">Telegram</div>
+                <div class="descriptionContenuto">Ecco a te il mio server telegram, su questo server potrai trovare tutti gli sconti di Amazon!</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=MzjHXEWVbFQ&list=PLn5i4wacySbHDuZxyi06kzeUpbCPVLQvc', '_blank')">
+                    <img src="img/Telegram_logo.png" alt="telegram">IN ARRIVO
+                </div>
+            </div>
+            <div class="sezioneContenuto">
+                <div class="imgContenuto"><img src="img/GitHub-Logo.png" alt="Design siti"> </div>
+                <div class="titleContenuto">GitHub</div>
+                <div class="descriptionContenuto">Ecco a te il mio github dove rilascio alcuni codici aperti a tutti ti consiglio di visitarlo!</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/github.com/ImElio', '_blank')">
+                    <img src="img/github_logo.jpg" alt="Youtube icon">VISITA
+                    ORA
+                </div>
+            </div>
+            <div class="sezioneContenuto">
+                <div class="imgContenuto"><img src="img/Reddit_banner.png" alt="Creare siti"></div>
+                <div class="titleContenuto">Reddit</div>
+                <div class="descriptionContenuto">Ecco il mio profilo reddit</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.reddit.com/user/ImElio_', '_blank')">
+                    <img src="img/reddit_logo.png" alt="Youtube icon">VISITA
+                    ORA
+                </div>
+            </div>
+            <div class="sezioneContenuto">
+                <div class="imgContenuto"><img src="img/steam_banner.jpg" alt="Altri tutorial"></div>
+                <div class="titleContenuto">Steam</div>
+                <div class="descriptionContenuto">Ecco il mio profilo steam se vuoi mandami anche la richiesta accetto tutti, mi raccomando lascia un commento positivo sul mio account</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/steamcommunity.com/id/ElioDaSoda/', '_blank')">
+                    <img src="img/Steam_icon_logo.png" alt="Youtube icon">VISITA
+                    ORA
+                </div>
+            </div>
+        </div>
+        <div class="titleContainer">Il mio server Discord</div>
+        <div id="discord">
+            <div id="discordTesti">
+                <div id="discordTitle">Neighbourhood</div>
+                <div id="discordDescription">Un server Discord in cui tutti noi possiamo parlare assieme, dove possiamo discutere e
+                    divertirci e molto altro. Molti canali e comandi gestiti da vari 
+                    bot che ci offrono una esperienza nel server super gradevole, tutti i mesi
+                    nuove novità.<br>Venite ed entrate per divertirci tutti insieme</div>
+                <div id="discordButton">
+                    <div onclick="openUrl('https:/\/discord.gg/', '_blank')"><img src="img/discord icon.png"
+                            alt="Discord icon">ENTRA SUBITO</div>
+                    <div onclick="openUrl('./pagine/discord.html', '_self')">ALTRE INFO</div>
+                </div>
+            </div>
+            <div id="discordImg">
+                <img src="img/discordBot.jpg" alt="Elio">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

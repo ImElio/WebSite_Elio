@@ -1,0 +1,657 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+/*MENU*/
+#menu{
+    width:calc(98% - 30px);
+    height: 70px;
+    background-color: white;
+    margin: 15px auto;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Bebas Neue', cursive;
+    padding-right: 30px;
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left:15px;
+}
+.sezioneMenu{
+    width:fit-content;
+    margin:0 10px;
+    font-size:22px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.sezioneMenu:hover{
+    transform:scale(1.1);
+}
+#sezioneCorrente{
+    font-size:25px;
+    color:#0099FF
+}
+
+/*CONTAINER SUPERIORE*/
+#containerSuperiore{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    pointer-events:none;
+}
+#title{
+    width:fit-content;
+    height: fit-content;
+    font-size: 70px;
+    padding:0px 20px;
+    font-family: 'Bebas Neue', cursive;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+#profiloHome{
+    width:600px;
+    position: absolute;
+    top:40px;
+    left:100px;
+}
+#profiloDiscord{
+    width:600px;
+    position: absolute;
+    top:40px;
+    left:250px;
+    z-index: 5;
+}
+#profiloPersonaggio1{
+    width:500px;
+    position: absolute;
+    top:100px;
+    left:-70px;
+}
+#profiloPersonaggio2{
+    width:500px;
+    position: absolute;
+    top:120px;
+    right:340px;
+    transform: scaleX(-1);
+}
+#profiloPersonaggio3{
+    width:600px;
+    position: absolute;
+    top:70px;
+    right:-100px;
+    transform: scaleX(-1);
+}
+#profiloChiSono{
+    width:700px;
+    position: absolute;
+    top:40px;
+    left:100px;
+}
+#seguimiSuHome{
+    width:300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: calc(15vh + 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#seguimiSuHome div:nth-child(1){
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+#seguimiSuHome div:nth-child(2) , #seguimiSuHome div:nth-child(3){
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    margin:5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#seguimiSuHome div:nth-child(2){
+    color:#F51F1F;
+}
+#seguimiSuHome div:nth-child(2):hover{
+    background-color:#f84949;
+    color:white;
+    transform: scale(1.05);
+}
+#seguimiSuHome div:nth-child(3){
+    color:#5865F2;
+}
+#seguimiSuHome div:nth-child(3):hover{
+    background-color:#828dfd;
+    color:white;
+    transform: scale(1.05);
+}
+#seguimiSuHome div img{
+    width:30px;
+    margin-right: 10px;
+}
+
+/*CONTAINER*/
+#container{
+    width:100%;
+    height: fit-content;
+    min-height: 2000px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+#containerDiscord{
+    width:100%;
+    height: fit-content;
+    min-height: 1450px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+#containerChiSono{
+    width:100%;
+    height: fit-content;
+    min-height: 900px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+#freccia{
+    width: 40px;
+    margin-top:10px;
+    margin-bottom:100px;
+}
+.titleContainer{
+    width:95%;
+    height:50px;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    position: relative;
+    padding-left: 10px;
+}
+.titleContainer::after{
+    content: "";
+    width:100%;
+    background-color: black;
+    height: 4px;
+    position: absolute;
+    top:37px;
+    left:0;
+    border-radius: 2px;
+}
+#contenuti{
+    width:90%;
+    height: fit-content;
+    margin:0 auto;
+}
+.sezioneContenuto{
+    width:400px;
+    height: 550px;
+    margin:30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+.imgContenuto{
+    width: 90%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+.imgContenuto img{
+    width: 120%;
+}
+.titleContenuto{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width:90%;
+    margin: 0 auto;
+}
+.descriptionContenuto{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width:90%;
+    height: 150px;
+    margin: 0 auto;
+}
+.buttonContenuto{
+    width: 170px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin:5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color:#F51F1F;
+    margin:0 auto;
+}
+.buttonContenuto:hover{
+    background-color:#f84949;
+    color:white;
+    transform: scale(1.05);
+}
+.buttonContenuto img{
+    width:30px;
+    margin-right: 10px;
+}
+#discord{
+    width:70%;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#discordTesti{
+    width:60%;
+    height: 90%;
+}
+#discordImg{
+    width:60%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+}
+#discordImg img{
+    height: 100%;
+}
+#discordTitle{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width:90%;
+    margin: 0 auto;
+}
+#discordDescription{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    width:90%;
+    height: 150px;
+    margin: 0 auto;
+    height: 280px;
+}
+#discordButton{
+    width:90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin:0 auto;
+}
+#discordButton div{
+    height: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin:5px 0;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#discordButton div:nth-child(1){
+    width: 170px;
+    color:#5865F2;
+}
+#discordButton div:nth-child(2){
+    width: 100px;
+    color:#7556DF;
+}
+#discordButton div:nth-child(1):hover{
+    background-color:#828dfd;
+    color:white;
+    transform: scale(1.05);
+}
+#discordButton div:nth-child(2):hover{
+    background-color:rgb(159, 167, 250);
+    color:white;
+    transform: scale(1.05);
+}
+#discordButton div img{
+    width:32px;
+    margin-right: 10px;
+}
+
+
+#topicDiscord{
+    width:90%;
+    height: fit-content;
+    margin:0 auto;
+}
+.sezioneTopic{
+    width:400px;
+    height: 550px;
+    margin:30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+.imgTopic{
+    width: 90%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+.imgTopic img{
+    width: 100%;
+}
+.titleTopic{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.descriptionTopic{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width:90%;
+    height: 150px;
+    margin: 10px auto;
+}
+.buttonTopic{
+    visibility:hidden;
+}
+
+#changelog{
+    width:70%;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#changelogTesti{
+    width:60%;
+    height: 90%;
+}
+#changelogImg{
+    width:60%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    margin-left: 2%;
+    align-items: center;
+    justify-content: center;
+}
+#changelogImg img{
+    height: 100%;
+}
+#changelogTitle{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width:90%;
+    margin: 0 auto;
+}
+#changelogDescription{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    width:90%;
+    height: 150px;
+    margin: 0 auto;
+    height: 280px;
+}
+#changelogButton{
+    width:90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin:0 auto;
+}
+#changelogButton div{
+    height: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin:5px 0;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#changelogButton div:nth-child(1){
+    width: 170px;
+    color:#F51F1F;
+}
+#changelogButton div:nth-child(2){
+    width: 160px;
+    color:#7556DF;
+}
+#changelogButton div:nth-child(1):hover{
+    background-color:#f84949;
+    color:white;
+    transform: scale(1.05);
+}
+#changelogButton div:nth-child(2):hover{
+    background-color:rgb(159, 167, 250);
+    color:white;
+    transform: scale(1.05);
+}
+#changelogButton div img{
+    width:32px;
+    margin-right: 10px;
+}
+
+#buttonDiscord{
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin:5px 0;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 27px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin:0 auto;
+    width: 200px;
+    color:#5865F2;
+}
+#buttonDiscord:hover{
+    background-color:#828dfd;
+    color:white;
+    transform: scale(1.05);
+}
+#buttonDiscord img{
+    width:34px;
+    margin-right: 10px;
+}
+
+/*CHI SONO*/
+#chiSono{
+    width:70%;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#chiSonoTesti{
+    width:70%;
+    height: 90%;
+}
+
+#chiSonoImg{
+    width:40%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+}
+#chiSonoImg img{
+    height: 100%;
+}
+#chiSonoTitle{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    width:90%;
+    margin: 0 auto;
+}
+#chiSonoDescription{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    width:90%;
+    height: 150px;
+    margin: 0 auto;
+    height: 280px;
+}
+#riquadriContatti{
+    width:45%;
+    height: 200px;
+    margin:30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.riquadroContatti{
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.titleRiquadro{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    margin:10px auto;
+}
+.buttonRiquadro div{
+    width: fit-content;
+    height: 45px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    margin:10px auto;
+    padding:0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 22px;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.buttonRiquadro div img{
+    width:30px;
+    margin-right: 10px;
+}
+.buttonRiquadro div:nth-child(1){
+    color:#F51F1F;
+}
+.buttonRiquadro div:nth-child(1):hover{
+    background-color:#f84949;
+    color:white;
+    transform: scale(1.05);
+}
+.buttonRiquadro div:nth-child(2){
+    color:#5865F2;
+}
+.buttonRiquadro div:nth-child(2):hover{
+    background-color:#828dfd;
+    color:white;
+    transform: scale(1.05);
+}
