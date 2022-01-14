@@ -146,8 +146,8 @@ class App extends React.Component {
       React.createElement("section", { className: "container" }, /*#__PURE__*/
       React.createElement("h1", null, "Ciao"), /*#__PURE__*/
       React.createElement("h2", null, "Stai per accedere al gioco segreto."), /*#__PURE__*/
-      React.createElement("p", null, "Ti basterà cliccare il tasto sotto!"), /*#__PURE__*/
-      React.createElement("p", null, "Non passare il link, facciamo divertire tutti"), /*#__PURE__*/
+      React.createElement("p", null, "Ti basterà il bottone sotto!"), /*#__PURE__*/
+      React.createElement("p", null, "Buona Fortuna"), /*#__PURE__*/
 
       React.createElement("button", {
         className: "debug-button",
@@ -160,7 +160,7 @@ class App extends React.Component {
         className: "trap-button",
         onClick: this.handleButtonClicked },
       gameOver && "Nice one",
-      cursorGrabbed && "Gotcha!",
+      cursorGrabbed && "Riprova",
       !gameOver && !cursorGrabbed && "Button!"), /*#__PURE__*/
 
 
